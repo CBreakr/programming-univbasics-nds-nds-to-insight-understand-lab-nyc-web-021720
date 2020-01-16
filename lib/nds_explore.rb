@@ -28,4 +28,10 @@ end
 def print_first_directors_movie_titles
   director = directors_database[0]
   movies = director[:movies]
+  
+  counter = 0
+  while movies[counter] do
+    puts movies[counter][:title]
+    counter += 1
+  end
 end
